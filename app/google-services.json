@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "263094465582",
+    "firebase_url": "https://gotstickers.firebaseio.com",
+    "project_id": "gotstickers",
+    "storage_bucket": "gotstickers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263094465582:android:c1b5c78651ca813d911bbf",
+        "android_client_info": {
+          "package_name": "com.wastickerapps.diwalistickers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263094465582-7h0he8a8bc9igd0hcni3oqd98opgd8kg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wastickerapps.diwalistickers",
+            "certificate_hash": "d932462a14dd885f2d99dad69ea448968ebddf53"
+          }
+        },
+        {
+          "client_id": "263094465582-ji7qppls5u33vmvh8f250q2b9fiqbl0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw2pbdGE2w5DLov8boHS5h7CwYTSoOpP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263094465582-ji7qppls5u33vmvh8f250q2b9fiqbl0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
