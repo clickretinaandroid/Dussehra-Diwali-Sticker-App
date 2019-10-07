@@ -25,6 +25,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.lang.ref.WeakReference;
 
 public class StickerPackDetailsActivity extends AddStickerPackActivity {
@@ -58,7 +61,8 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
 
 
     //private InterstitialAd interstitialAd;
-
+    //Google Ads
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -134,6 +138,11 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
         // For auto play video ads, it's recommended to load the ad
         // at least 30 seconds before it is shown
         //interstitialAd.loadAd();
+
+        //Google Ads
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
 

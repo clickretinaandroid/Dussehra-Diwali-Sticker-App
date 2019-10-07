@@ -29,10 +29,10 @@
 
     <!--To Change-->
     <string name="fb_native_banner_ads_app_id">2579546612058996_2579547172058940</string>
-    <string name="app_share_text">Get Game of Thrones Stickers for WhatsApp.</string>
+    <string name="app_share_text">Get Dusserha Diwali Stickers for WhatsApp. </string>
 
     <string name="privacy_policy_url">https://sites.google.com/view/gameofthronesstickers</string>
-    <string name="play_store_package_name">com.gameofthrones.stickers</string>
+    <string name="play_store_package_name">com.wastickerapps.diwalistickers</string>
     <string name="banner_ad_unit_id">ca-app-pub-5820722969718167/2594516787</string>
 
 </resources>

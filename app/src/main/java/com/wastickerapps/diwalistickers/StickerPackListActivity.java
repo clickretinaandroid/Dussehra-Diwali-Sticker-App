@@ -311,7 +311,7 @@ public class StickerPackListActivity extends AddStickerPackActivity {
             try {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                String link = "https://play.google.com/store/apps/details?id=" + getPackageName();
+                String link = " https://play.google.com/store/apps/details?id=" + getPackageName();
                 String message = getString(R.string.app_share_text) + link;
                 intent.putExtra(Intent.EXTRA_TEXT, message);
                 startActivity(Intent.createChooser(intent, "Share App"));

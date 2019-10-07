@@ -34,8 +34,8 @@ android {
         minSdkVersion 16
         targetSdkVersion 28
         ///change version code when update on play console
-        versionCode 7
-        versionName "1.7"
+        versionCode 10
+        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
         // Creates a placeholder property to use in the manifest.
@@ -134,12 +134,12 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.github.bumptech.glide:glide:4.8.0'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
     implementation 'com.android.support:multidex:1.0.3'
 
     implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
     implementation 'com.crashlytics.sdk.android:answers:1.4.7'
-    implementation 'com.facebook.android:audience-network-sdk:5.5.0'
+
 
 
 }
