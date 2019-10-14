@@ -4,11 +4,9 @@
   "sticker_packs": [
 
 
-
-
     {
       "identifier": "1",
-      "name": "Dussehra Sticker",
+      "name": "Diwali Sticker",
       "publisher": "The Captain Flint",
       "tray_image_file": "tryicon.png",
       "publisher_email":"",
@@ -105,110 +103,8 @@
         }
       ]
     },
+
     {
-      "identifier": "5",
-      "name": "Dussehra Sticker",
-      "publisher": "The Captain Flint",
-      "tray_image_file": "tryicon.png",
-      "publisher_email": "",
-      "publisher_website": "",
-      "privacy_policy_website": "",
-      "license_agreement_website": "",
-      "stickers": [
-        {
-          "image_file": "01.webp"
-        },
-        {
-          "image_file": "02.webp"
-        },
-        {
-          "image_file": "03.webp"
-        },
-        {
-          "image_file": "04.webp"
-        },
-        {
-          "image_file": "05.webp"
-        },
-        {
-          "image_file": "06.webp"
-        },
-        {
-          "image_file": "07.webp"
-        },
-        {
-          "image_file": "08.webp"
-        },
-        {
-          "image_file": "09.webp"
-        },
-        {
-          "image_file": "10.webp"
-        },
-        {
-          "image_file": "11.webp"
-        },
-        {
-          "image_file": "12.webp"
-        },
-        {
-          "image_file": "13.webp"
-        },
-        {
-          "image_file": "14.webp"
-        },
-        {
-          "image_file": "15.webp"
-        },
-        {
-          "image_file": "16.webp"
-        },
-        {
-          "image_file": "17.webp"
-        },
-        {
-          "image_file": "18.webp"
-        },
-        {
-          "image_file": "19.webp"
-        },
-        {
-          "image_file": "20.webp"
-        },
-        {
-          "image_file": "21.webp"
-        },
-        {
-          "image_file": "22.webp"
-        },
-        {
-          "image_file": "23.webp"
-        },
-        {
-          "image_file": "24.webp"
-        },
-        {
-          "image_file": "25.webp"
-        },
-        {
-          "image_file": "26.webp"
-        },
-        {
-          "image_file": "27.webp"
-        },
-        {
-          "image_file": "28.webp"
-        },
-        {
-          "image_file": "29.webp"
-        },
-        {
-          "image_file": "30.webp"
-        }
-      ]
-    },
-    
-	  {
       "identifier": "2",
       "name": "Diwali Stickers",
       "publisher": "The Captain Flint",
@@ -316,6 +212,7 @@
         }
       ]
       },
+
 	{
       "identifier": "3",
       "name": "Diwali Stickers",
@@ -416,6 +313,7 @@
         }
       ]
     },
+
     {
       "identifier": "4",
       "name": "Crackers",
@@ -487,7 +385,109 @@
           "emojis": ["😀","😘"]
         }
       ]
-    }
+    },
 
+    {
+      "identifier": "5",
+      "name": "Dussehra Sticker",
+      "publisher": "The Captain Flint",
+      "tray_image_file": "tryicon.png",
+      "publisher_email": "",
+      "publisher_website": "",
+      "privacy_policy_website": "",
+      "license_agreement_website": "",
+      "stickers": [
+        {
+          "image_file": "01.webp"
+        },
+        {
+          "image_file": "02.webp"
+        },
+        {
+          "image_file": "03.webp"
+        },
+        {
+          "image_file": "04.webp"
+        },
+        {
+          "image_file": "05.webp"
+        },
+        {
+          "image_file": "06.webp"
+        },
+        {
+          "image_file": "07.webp"
+        },
+        {
+          "image_file": "08.webp"
+        },
+        {
+          "image_file": "09.webp"
+        },
+        {
+          "image_file": "10.webp"
+        },
+        {
+          "image_file": "11.webp"
+        },
+        {
+          "image_file": "12.webp"
+        },
+        {
+          "image_file": "13.webp"
+        },
+        {
+          "image_file": "14.webp"
+        },
+        {
+          "image_file": "15.webp"
+        },
+        {
+          "image_file": "16.webp"
+        },
+        {
+          "image_file": "17.webp"
+        },
+        {
+          "image_file": "18.webp"
+        },
+        {
+          "image_file": "19.webp"
+        },
+        {
+          "image_file": "20.webp"
+        },
+        {
+          "image_file": "21.webp"
+        },
+        {
+          "image_file": "22.webp"
+        },
+        {
+          "image_file": "23.webp"
+        },
+        {
+          "image_file": "24.webp"
+        },
+        {
+          "image_file": "25.webp"
+        },
+        {
+          "image_file": "26.webp"
+        },
+        {
+          "image_file": "27.webp"
+        },
+        {
+          "image_file": "28.webp"
+        },
+        {
+          "image_file": "29.webp"
+        },
+        {
+          "image_file": "30.webp"
+        }
+      ]
+    }
   ]
 }
