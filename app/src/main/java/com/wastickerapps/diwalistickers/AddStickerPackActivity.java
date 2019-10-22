@@ -21,9 +21,15 @@ import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+
 public abstract class AddStickerPackActivity extends BaseActivity {
     public static final int ADD_PACK = 200;
     public static final String TAG = "AddStickerPackActivity";
+    private InterstitialAd interstitial;
 
     protected void addStickerPackToWhatsApp(String identifier, String stickerPackName) {
         try {
@@ -85,6 +91,7 @@ public abstract class AddStickerPackActivity extends BaseActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == ADD_PACK) {
+            admobInterstitial();
             if (resultCode == Activity.RESULT_CANCELED) {
                 if (data != null) {
                     final String validationError = data.getStringExtra("validation_error");
@@ -141,5 +148,36 @@ public abstract class AddStickerPackActivity extends BaseActivity {
                 Toast.makeText(getActivity(), R.string.cannot_find_play_store, Toast.LENGTH_LONG).show();
             }
         }
+    }
+
+    public void displayInterstitial()
+    {
+        // If Interstitial Ads are loaded then show else show nothing.
+        if (interstitial.isLoaded()) {
+            interstitial.show();
+        }
+    }
+    public void admobInterstitial(){
+        MobileAds.initialize(this, "ca-app-pub-5820722969718167/6052227677");
+        AdRequest adIRequest = new AdRequest.Builder().build();
+
+        // Prepare the Interstitial Ad Activity
+        interstitial = new InterstitialAd(AddStickerPackActivity.this);
+
+        // Insert the Ad Unit ID
+        interstitial.setAdUnitId("ca-app-pub-5820722969718167/6052227677");
+
+        // Interstitial Ad load Request
+        interstitial.loadAd(adIRequest);
+
+        // Prepare an Interstitial Ad Listener
+        interstitial.setAdListener(new AdListener()
+        {
+            public void onAdLoaded()
+            {
+                // Call displayInterstitial() function when the Ad loads
+                displayInterstitial();
+            }
+        });
     }
 }

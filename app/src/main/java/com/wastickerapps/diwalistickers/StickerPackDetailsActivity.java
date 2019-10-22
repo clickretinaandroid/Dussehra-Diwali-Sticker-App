@@ -25,8 +25,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 import java.lang.ref.WeakReference;
 
@@ -62,6 +65,7 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
 
     //private InterstitialAd interstitialAd;
     //Google Ads
+    private InterstitialAd interstitial;
     private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +100,7 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
             getSupportActionBar().setTitle(showUpButton ? R.string.title_activity_sticker_pack_details_multiple_pack : R.string.title_activity_sticker_pack_details_single_pack);
         }
 
+        admobInterstitial();
 
 
 
@@ -144,8 +149,35 @@ public class StickerPackDetailsActivity extends AddStickerPackActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
     }
+    public void displayInterstitial() {
+        // If Interstitial Ads are loaded then show else show nothing.
+        if (interstitial.isLoaded()) {
+            interstitial.show();
+        }
+    }
+    public void admobInterstitial(){
+    MobileAds.initialize(this, "ca-app-pub-5820722969718167/6052227677");
+    AdRequest adIRequest = new AdRequest.Builder().build();
 
+    // Prepare the Interstitial Ad Activity
+    interstitial = new InterstitialAd(StickerPackDetailsActivity.this);
 
+    // Insert the Ad Unit ID
+    interstitial.setAdUnitId("ca-app-pub-5820722969718167/6052227677");
+
+    // Interstitial Ad load Request
+    interstitial.loadAd(adIRequest);
+
+    // Prepare an Interstitial Ad Listener
+    interstitial.setAdListener(new AdListener()
+    {
+        public void onAdLoaded()
+        {
+            // Call displayInterstitial() function when the Ad loads
+            displayInterstitial();
+        }
+    });
+}
 
     private void launchInfoActivity(String publisherWebsite, String publisherEmail, String privacyPolicyWebsite, String trayIconUriString) {
         Intent intent = new Intent(StickerPackDetailsActivity.this, StickerPackInfoActivity.class);

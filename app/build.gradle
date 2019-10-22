@@ -34,8 +34,8 @@ android {
         minSdkVersion 16
         targetSdkVersion 28
         ///change version code when update on play console
-        versionCode 11
-        versionName "2.1"
+        versionCode 12
+        versionName "2.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         def contentProviderAuthority = applicationId + ".stickercontentprovider"
         // Creates a placeholder property to use in the manifest.
